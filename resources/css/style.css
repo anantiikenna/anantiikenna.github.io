@@ -47,7 +47,7 @@ nav li a {
 
 main {
   margin-top: 2rem;
-  padding: 5px 2rem;
+  padding: 5px 1rem;
 }
 
 main #intro{
@@ -75,26 +75,26 @@ main #intro{
 }
 
 @media only screen and (max-width: 845px){
-    main #intro{
-      display: flex;
-      justify-content:space-between;
-      flex-direction: column;
-      align-items:center;
-      padding: 20px 3rem;
-    }
+  main #intro{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px 3rem;
+  }
 
-    .box{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .box img{
-      width: 20rem;
-      height: auto;
-    
-    }
+  .box img{
+    width: 20rem;
+    height: auto;
+  
+  }
 
     
 }
@@ -120,8 +120,6 @@ aside{
   width: 150px;
 }
 
-
-
 .linebox{
   padding: 0.5rem 1rem;
   border: 1px solid  #C778DD;
@@ -134,12 +132,99 @@ aside{
   align-self: center;
 }
 
+#quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  
+  
+}
+
+#quote img{
+  display: flex;
+  align-self: flex-start;
+  z-index: 12;
+  margin-top: -3rem;
+  background: #282C33;
+  border: 8px solid #282C33;
+  
+}
+
+.quot{
+  display: inline-flex;
+  align-self: center;
+  padding: 2rem;
+  justify-self: center;
+  align-items: ;
+  gap: 0.625rem;
+  border: 1px solid var(--gray, #ABB2BF);
+}
+
 #project {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
+  margin-top: 1.5rem;
+  padding: 0px 0.5rem;
 }
+
+.smallbox{
+  width:20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.smallbox img{
+  width: 100%;
+  height: auto;
+  align-self: center;
+  background-image:url(../images/Logo.png);
+  background-repeat: no-repeat;
+}
+
+.topbottom{
+  margin: 0px;
+  border-top: 1px solid #C778DD;
+  border-bottom: 1px solid #C778DD;
+  padding: 0.5rem;
+  
+}
+
+h3{
+  font-family: Fira Code;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.lineround{
+  border: 1px solid  #C778DD;
+}
+
+.view{
+  color: #FFF;
+  padding: 0px 1rem 1rem;
+}
+
+.spacing{
+  padding: 1rem;
+}
+
+.spacing aside{
+  border: 1px solid #C778DD;
+  padding: 0.5rem 1rem; 
+  align-items: flex-start;
+  width: 5rem;
+
+}
+
 
 
 /* 
