@@ -214,30 +214,12 @@ main #quote{
 }
 
 @media only screen and (max-width: 830px){
-  main #quote{
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 3rem;
-    font-size: 1.5rem;
-    color: #FFF;
-    margin: 0 auto;
-  }
-  
   .quot{
     display: flex;
     padding: 1rem 4rem 1rem 1rem;
     gap: 0.625rem;
     border: 1px solid var(--gray, #ABB2BF);
     text-align: center;
-  }
-  
-  .quot .img{
-    display: flex;
-    align-self: flex-start;
-    z-index: 12;
-    margin-top: -2rem;
-    background: #282C33;
-    border: 8px solid #282C33;
   }
   
   .quot2{
@@ -249,21 +231,6 @@ main #quote{
     border: 1px solid var(--gray, #ABB2BF);
   }
   
-  .quot2 p{
-    margin-left: 1rem;
-    margin-right: -3.5rem;
-  }
-  
-  .quot2 .img2{
-    display: flex;
-    align-self: flex-start;
-    z-index: 12;
-    margin-top: -1rem;
-    margin-right: -1rem;
-    background: #282C33;
-    border: 8px solid #282C33;
-    padding: 0rem;
-  }
 }
 
 main #project{
@@ -308,7 +275,7 @@ main #project{
 
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
   .bigbox {
     display: flex;
     justify-content:center;
@@ -320,7 +287,7 @@ main #project{
   }
 
   .smallbox{
-    width:60% !important;
+    width:100% !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -328,7 +295,7 @@ main #project{
 }
 
 .smallbox{
-  width:20rem;
+  width:100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -379,6 +346,13 @@ h3{
   align-items: flex-start;
   width: 7rem;
   margin: 0.5rem 0;
+}
+
+main #skill {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 7rem;
 }
 
 /* 
