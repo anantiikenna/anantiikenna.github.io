@@ -1,5 +1,5 @@
 *{
-    ox-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
+  color: #FFF;
 }
 
 a {
@@ -61,26 +62,41 @@ main #intro{
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-    
+  justify-content: flex-start;    
 }
 
-.box img{
+.box .img{
   width:25rem;
   height: auto;
   align-self: center;
   background-image:url(../images/Logo.png);
-  background-repeat: no-repeat;
-    
+  background-repeat: no-repeat;    
 }
 
-@media only screen and (max-width: 845px){
+.dotted{
+  width: 5rem;
+  margin-top: -8.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 15rem;
+  margin-right: 25rem;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1000px){
   main #intro{
     display: flex;
     justify-content:center;
     flex-direction: column;
     align-items:center;
     padding: 20px 3rem;
+  }
+
+  h2{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;    
   }
 
   .box{
@@ -90,25 +106,33 @@ main #intro{
     align-items: center;
   }
 
+  .dotted{
+    width: 5rem !important;
+    margin-top: -8.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 17rem;
+    margin-right: 0rem;
+    z-index: 3;
+  }
+
+  .row{
+    gap: 2rem;
+  }
+
   .box img{
     width: 20rem;
     height: auto;
-  
-  }
-
-    
+  }    
 }
 
 #intro h2{
   color: var(--white, #FFF);
   font-size: 2rem;
   font-style: normal;
-  font-weight: 600;
-    
-    
+  font-weight: 600;    
 }
 
-#intro mark{
+mark{
   background-color: transparent;
   color: #C778DD;
 }
@@ -132,37 +156,148 @@ aside{
   align-self: center;
 }
 
-#quote{
+main #quote{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem;
-  
-  
-}
-
-#quote img{
-  display: flex;
-  align-self: flex-start;
-  z-index: 12;
-  margin-top: -3rem;
-  background: #282C33;
-  border: 8px solid #282C33;
-  
+  font-size: 1.5rem;
+  color: #FFF;
 }
 
 .quot{
-  display: inline-flex;
+  display: flex;
   align-self: center;
-  padding: 2rem;
+  padding: 1rem;
+  padding-right: 4rem;
   justify-self: center;
-  align-items: ;
+  align-items:center;
   gap: 0.625rem;
   border: 1px solid var(--gray, #ABB2BF);
 }
 
-#project {
+.quot .img{
+  display: flex;
+  align-self: flex-start;
+  z-index: 12;
+  margin-top: -2rem;
+  background: #282C33;
+  border: 8px solid #282C33;
+}
+
+.quot2{
+  display: flex;
+  align-self: center;
+  padding-right: 2rem;
+  justify-self: center;
+  align-items:center;
+  margin-right: -31.6rem;
+  gap: 0.625rem;
+  border: 1px solid var(--gray, #ABB2BF);
+}
+
+.quot2 p{
+  margin-left: 1rem;
+  margin-right: -3.5rem;
+}
+
+.quot2 .img2{
+  display: flex;
+  align-self: flex-start;
+  z-index: 12;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  background: #282C33;
+  border: 8px solid #282C33;
+  padding: 0rem;
+}
+
+@media only screen and (max-width: 830px){
+  main #quote{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    font-size: 1.5rem;
+    color: #FFF;
+    margin: 0 auto;
+  }
+  
+  .quot{
+    display: flex;
+    padding: 1rem 4rem 1rem 1rem;
+    gap: 0.625rem;
+    border: 1px solid var(--gray, #ABB2BF);
+    text-align: center;
+  }
+  
+  .quot .img{
+    display: flex;
+    align-self: flex-start;
+    z-index: 12;
+    margin-top: -2rem;
+    background: #282C33;
+    border: 8px solid #282C33;
+  }
+  
+  .quot2{
+    align-self: flex-end;
+    padding-right: 2rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    gap: 0.625rem;
+    border: 1px solid var(--gray, #ABB2BF);
+  }
+  
+  .quot2 p{
+    margin-left: 1rem;
+    margin-right: -3.5rem;
+  }
+  
+  .quot2 .img2{
+    display: flex;
+    align-self: flex-start;
+    z-index: 12;
+    margin-top: -1rem;
+    margin-right: -1rem;
+    background: #282C33;
+    border: 8px solid #282C33;
+    padding: 0rem;
+  }
+}
+
+main #project{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 7rem;
+}
+
+.subtitle{
+  display:flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
+}
+
+.subtitle h2{
+  text-align: left;
+}
+
+.line{
+
+  background-image: url(../images/line.svg);
+  background-size: cover;
+  width: 10rem;
+  height: 0.3rem;
+  align-self: center;
+  margin: 0 1rem;
+}
+
+
+
+.bigbox {
   display: flex;
   justify-content:center;
   align-items: center;
@@ -171,17 +306,42 @@ aside{
   padding: 0px 0.5rem;
 }
 
+
+
+@media only screen and (max-width: 1000px){
+  .bigbox {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    padding: 0px 0.5rem;
+  }
+
+  .smallbox{
+    width:60% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
 .smallbox{
   width:20rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.lineround{
+  border: 1px solid  #C778DD;
+}
+
 .smallbox img{
   width: 100%;
   height: auto;
   align-self: center;
-  background-image:url(../images/Logo.png);
   background-repeat: no-repeat;
 }
 
@@ -199,33 +359,27 @@ h3{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
-  color: #FFF;
 }
 
-.lineround{
-  border: 1px solid  #C778DD;
+
+
+.desc{
+  padding: 0px 1rem 0px;
 }
 
 .view{
-  color: #FFF;
-  padding: 0px 1rem 1rem;
-}
-
-.spacing{
   padding: 1rem;
 }
 
-.spacing aside{
+.view aside{
   border: 1px solid #C778DD;
   padding: 0.5rem 1rem; 
   align-items: flex-start;
-  width: 5rem;
-
+  width: 7rem;
+  margin: 0.5rem 0;
 }
-
-
 
 /* 
 body {
