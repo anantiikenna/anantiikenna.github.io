@@ -7,6 +7,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+      <script src="https://kit.fontawesome.com/0751a96b75.js" crossorigin="anonymous"></script>
+      <script src='./resources/script/index.js' async ></script>
   </head>
   <body>       
     <header>
@@ -14,9 +16,9 @@
             <ul id="logo"><a href="index.html">Ikenna</a></ul>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#Work">Works</a></li>
-                <li><a href="#Aboutme">About Me</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#project">Works</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,14 +26,14 @@
     <main>
         <section id="intro">
             <div class="box row">
-                <h2>Ikenna is a <mark>web designer</mark> and <mark>front-end developer</mark> </h2>
-                <p>Design and develop responsive websites where technologies meet creativity</p>
+                <h2>Ikenna is a <mark>front-end developer</mark> </h2>
+                <p>Develop responsive websites where technologies meet creativity</p>
                 <aside class="linebox"><a href="#contact">Contact me!!</a></aside>
             </div>
             <div class="box">
                 <img src="./resources/images/Image (2).png" class="img">
                 <img src="./resources/images/Dots.png" class="dotted">
-                <p class="linebox pf">Currently working on <mark>Portfolio</mark></p>
+                <p class="linebox aligned">Currently working on <mark>Portfolio</mark></p>
             </div>
         </section>
 
@@ -47,8 +49,9 @@
         </section>
         
         <section id="project">
+          
           <div class="subtitle">
-            <h2><mark>#</mark> projects</h2><mark class="line">&nbsp;&nbsp;&nbsp;</mark>
+            <h2><mark>#</mark>projects</h2><mark class="line">&nbsp;&nbsp;&nbsp;</mark>
           </div>
           <div class="bigbox">
             <div class="smallbox lineround">
@@ -56,22 +59,42 @@
               <p class="topbottom">Figma => WordPress:Elementor</p>
               <h3>Gallery of Code</h3>
               <p class="desc">Information Technology Company Site</p>
-              <div class="view"><aside>View <~></aside></div>
+              <div  class="view"><aside id='view1'>View <~></aside></div>
             </div>
+  
             <div class="smallbox lineround">
               <img src="./resources/images/Web capture_13-11-2023_13652_realmaxville.com.jpg">
               <p class="topbottom">WordPress:Elementor</p>
               <h3>RealMax Ville</h3>
               <p class="desc">An Architecture and Construction Site</p>
-              <div class="view"><aside>View <~></aside></div>
+              <div id='view2' class="view"><aside>View <~></aside></div>
             </div>
+
             <div class="smallbox lineround">
               <img src="./resources/images/2017-09-18 (1).png">
               <p class="topbottom"> WordPress: Visual Composer</p>
               <h3>Festac Road Race</h3>
               <p class="desc">Racing Site</p>
-              <div class="view"><aside>View <~></aside></div>
+              <div id='view3' class="view"><aside>View <~></aside></div>
             </div>
+          </div>
+        </section>
+        
+        <section id="projectFullImage">
+          <div id="vimage1" class="posDisplay">
+            <span class="close">&times;</span>
+            <img src="./resources/images/Web capture_13-11-2023_131151_galleryofcode.com.jpeg" id="img01" class="modal-content" alt="Gallery of Code">
+            <div id="caption1"></div>
+          </div>
+          <div id="vimage2" class="posDisplay">
+            <span class="close">&times;</span>
+            <img src="./resources/images/Web capture_13-11-2023_13652_realmaxville.com.jpeg" id="img02" class="modal-content" alt="Gallery of Code">
+            <div id="caption2"></div>
+          </div>
+          <div id="vimage3" class="posDisplay">
+            <span class="close">&times;</span>
+            <img src="./resources/images/Web capture_13-11-2023_131151_galleryofcode.com.jpeg" id="img03" class="modal-content" alt="Gallery of Code">
+            <div id="caption3"></div>
           </div>
         </section>
 
@@ -89,6 +112,7 @@
               <img src="./resources/images/wordpress-blue-logo-png-transparent.png" class="smallicon">
               <img src="./resources/images/adobe-photoshop-cs3-logo-png-transparent.png" class="smallicon">    
               <img src="./resources/images/figma-1-logo-png-transparent.png" class="smallicon">
+              <img src="./resources/images/GitHub_logo.png" class="smallicon">
             </div>
             <div id="descript">
               <div class="smalldescript">
@@ -111,24 +135,59 @@
           <div class="subtitle">
             <h2><mark>#</mark>about me</h2><mark class="line">&nbsp;&nbsp;&nbsp;</mark>
           </div>
-          <p class="me">
-            Hi, i’m Ikenna!
-
-            I’m a self-taught front-end developer based in Lagos, Nigeria. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. <br/><br/>
-            
-            Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
-          </p>
-          <aside class="linebox"><a href="#contact">Read more -></a></aside>
+          <div class="bigbox">
+            <div class="smalldescript">
+              <p class="me">
+                Hi, i’m Ikenna! <br /><br />
+    
+                I’m a self-taught front-end developer based in Lagos, Nigeria. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. <br/><br/>
+                
+                Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+              </p>
+              <aside class="linebox"><a href="#contact">Read more -></a></aside>
+            </div>
+            <div class="smallbox">
+              <div class="imgme">&nbsp;</div>
+            </div>
+          </div>
         </section>
 
         <section id="contact">
           <div class="subtitle">
             <h2><mark>#</mark>contact</h2><mark class="line">&nbsp;&nbsp;&nbsp;</mark>
           </div>
+          <div class="bigbox2">
+            <div class="smalldescript1">
+              <p class="me">
+                I’m interested in freelance opportunities.<br> However, if you have other request or question, don’t hesitate to contact me
+              </p>
+            </div>
+            <div class="smallbox linebox">
+              <h4>Message me here</h4>
+              <p><i class="fa-solid fa-envelope"></i> ananti.ikenna@gmail.com</p>
+              <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/ikenna-ananti-49682196/"> Ikenna Ananti</a></p>
+              <p><i class="fa-solid fa-phone"></i> +234 7030300508</p>
+            </div>
+          </div>
         </section>
-
     </main>
+
     <footer>
+      <div class="bigbox3">
+        <div class="smalldescript">
+          <div class="logo2">Ikenna</div>
+          <p class="content">Front-end developer</p>
+        </div>
+        <div class="smallbox">
+          <p class="white">Media</p>
+          <div class="social">
+            <a href="https://github.com/anantiikenna"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ikenna-ananti-49682196/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="smalldescript1">© Copyright 2022. Made by Ikenna</div>
     </footer>
+    
   </body>
 </html>
