@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  background-color: #282c33;
+  background-color: #112;
   font-family: 'Fira Code', monospace;
   color: #ABB2BF;
   margin: 0px;
@@ -186,8 +186,8 @@ main #quote{
   align-self: flex-start;
   z-index: 1;
   margin-top: -2rem;
-  background: #282C33;
-  border: 8px solid #282C33;
+  background: #112;
+  border: 8px solid #112;
 }
 
 .quot2{
@@ -212,8 +212,8 @@ main #quote{
   z-index: 1;
   margin-top: -1rem;
   margin-right: -1rem;
-  background: #282C33;
-  border: 8px solid #282C33;
+  background: #112;
+  border: 8px solid #112;
   padding: 0rem;
 }
 
