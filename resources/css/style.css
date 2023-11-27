@@ -351,7 +351,7 @@ h3{
   border: 1px solid #C778DD;
   padding: 0.5rem 1rem; 
   align-items: flex-start;
-  width: 7rem;
+  width: auto;
   margin: 0.5rem 0;
   cursor: pointer;
 }
@@ -360,7 +360,6 @@ main #skill {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 #icon{
@@ -373,13 +372,14 @@ main #skill {
 }
 
 .smallicon{
-  width:8%;
+  width:15%;
 }
 
 @media only screen and (max-width: 1300px){
   #icon{
     display: flex;
     width: 100%;
+    justify-content: flex-start;
     align-self: flex-start;
     flex-wrap: wrap;
     padding: 1em;
@@ -387,7 +387,7 @@ main #skill {
   }
 
   .smallicon{
-    width: 5%;
+    width:10%;
   }
 }
 
@@ -566,6 +566,7 @@ footer{
 footer .bigbox3{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-self: center;
   gap: 5rem;
   padding: 1.5rem 3rem;
@@ -580,19 +581,20 @@ footer .smalldescript1{
 footer  .smallbox{
   padding: 0px;
   margin: 0rem;
-  align-items:flex-start;
+  align-items:center;
   width: 25rem;
 }
 
 footer .logo2{
   color: #FFF;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 footer .white{
   color: #FFF;
   font-size: 1.5rem;
   line-height: normal;
-  margin: 0.5rem 0rem;
+  margin: 0rem 0rem;
 }
 
