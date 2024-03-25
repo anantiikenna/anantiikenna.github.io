@@ -484,6 +484,10 @@ main #contact {
   display: none; /* Hidden by default */
 }
 
+#vimage4 {
+  display: none; /* Hidden by default */
+}
+
 .posDisplay{
   position: fixed; /* Stay in place */
   z-index: 5; /* Sit on top */
